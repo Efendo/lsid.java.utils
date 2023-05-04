@@ -30,4 +30,11 @@ public class JCBase{
         }
         return Num;
     }
+    public HashSet<String> MNgenList(int bit,int base, int rep) {
+        HashSet<String> LON = new HashSet<String>();
+        while(LON.size() < (int) Math.pow(base, bit * rep)) {
+            LON.add(MNgenNum(bit, base, rep));
+        }
+        return LON;
+    }
 }
