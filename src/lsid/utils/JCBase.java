@@ -22,4 +22,12 @@ public class JCBase{
         }
         return Num;
     }
+
+    public String MNgenNum(int bits, int base,int rep) {
+        String Num = "";
+        for (int i = 0; i < rep ; i++) {
+            Num += GenNum(bits, base);
+        }
+        return Num;
+    }
 }
