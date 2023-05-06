@@ -23,17 +23,17 @@ public class JCBase{
         return Num;
     }
 
-    public String MNgenNum(int bits, int base,int rep) {
+    public String PgenNum(int bits, int base,int rep) {
         String Num = "";
         for (int i = 0; i < rep ; i++) {
             Num += GenNum(bits, base);
         }
         return Num;
     }
-    public HashSet<String> MNgenList(int bit,int base, int rep) {
+    public HashSet<String> PgenList(int bit,int base, int rep) {
         HashSet<String> LON = new HashSet<String>();
         while(LON.size() < (int) Math.pow(base, bit * rep)) {
-            LON.add(MNgenNum(bit, base, rep));
+            LON.add(PgenNum(bit, base, rep));
         }
         return LON;
     }
